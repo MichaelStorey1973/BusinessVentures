@@ -20,43 +20,26 @@ public string PBIDatabase = "TKV-BusinessVentures";
 List<PartitionProcessingStatus> processingStatus =
     GetProcessingStatus(Model);
 
-var rds = GetRDS(PBIServer, PBIDatabase)
-    .OrderBy(x => x)
-    .ToList();
+var x = processingStatus.Where(
+n=>n.PartitionName.Contains("20260904") && !n.PartitionName.Contains("LTE"))
+.ToList() ; 
 
-foreach (var batch in rds.Chunk(5))
-{
-    Logger.Log($"Processing Batch: {string.Join(",", batch)}");
+CreateMissingParts( GetRDS(PBIServer, PBIDatabase));
 
-    var partitionsToProcess =
-        processingStatus
-            .Where(p =>
-                batch.Any(rdsDate =>
-                    p.PartitionName.Contains(rdsDate.ToString()))
-                &&
-                !p.PartitionName.Contains("LTE"))
-            .ToList();
 
-        Logger.Log($"Found {partitionsToProcess.Count} partitions");
 
-    foreach (var partition in partitionsToProcess)
-    {
-        Logger.Log("Procesing " + partition.PartitionName);        
-    }
 
-    // Execute and wait for completion
-    // model.SaveChanges();
-    // WaitForCompletion();
-}
-Logger.Log("Start Processing");
+
+/* DO THE PROCESSING HERE 
+Logger.Log("Start Processing 20260904");
 ProcessPartitions(
 PBIServer, 
 PBIDatabase, 
-partitionsToProcess,
-64
+x,
+5 
 ); 
-Logger.Log("End Processing");
-
+Logger.Log("End Processing 20260904");
+*/ 
 
 //foreach (PartitionProcessingStatus item in processingStatus)
 //{
@@ -77,6 +60,84 @@ Logger.Log("End Processing");
 //            : " | " + item.ErrorMessage));
 //}
 //
+
+public void CreateMissingParts(List<int> RDS)
+{
+    foreach (int item in RDS)
+    {        
+        
+        string newPartName = "Fact_Finance_20250930_DTD".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Finance"].Partitions.Contains(newPartName ))
+        {
+           TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_DTD"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_DTD"].Expression.Replace("20250930" , item.ToString());
+        }
+        
+        newPartName = "Fact_Finance_20250930_LTE".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Finance"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_LTE"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_LTE"].Expression.Replace("20250930" , item.ToString());
+        }
+        
+        newPartName = "Fact_Finance_20250930_YTD".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Finance"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_YTD"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_YTD"].Expression.Replace("20250930" , item.ToString());
+        }
+        
+        newPartName = "Fact_Finance_20250930_YTE".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Finance"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_YTE"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Finance"].Partitions["Fact_Finance_20250930_YTE"].Expression.Replace("20250930" , item.ToString());
+        }
+
+        newPartName = "Fact_Greeks_20250930_DTD".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Greeks"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_DTD"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_DTD"].Expression.Replace("20250930" , item.ToString());
+        }
+        
+        newPartName = "Fact_Greeks_20250930_LTE".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Greeks"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_LTE"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_LTE"].Expression.Replace("20250930" , item.ToString());
+        }
+        
+        newPartName = "Fact_Greeks_20250930_YTD".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Greeks"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_YTD"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_YTD"].Expression.Replace("20250930" , item.ToString());
+        }
+        
+        newPartName = "Fact_Greeks_20250930_YTE".Replace("20250930" , item.ToString());        
+        if ( !Model.Tables["Fact_Greeks"].Partitions.Contains(newPartName ))
+        {
+            TabularEditor.TOMWrapper.Partition pnew = Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_YTE"].Clone();
+            pnew.Name = pnew.Name.Replace("20250930" , item.ToString()).Replace(" copy" , ""); 
+            pnew.Expression =     Model.Tables["Fact_Greeks"].Partitions["Fact_Greeks_20250930_YTE"].Expression.Replace("20250930" , item.ToString());
+        }
+
+
+
+    }
+}
+
+
+
+
 public class PartitionProcessingStatus
 {
     public string TableName { get; set; }
