@@ -1,0 +1,17 @@
+{
+  "type": "calculated",
+  "name": "REPORTING_DATE",
+  "dataType": "int64",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": [
+    "",
+    "IF (",
+    "    CONTAINSSTRING ( 'Processing Status'[PARTITION_NAME], \"Adjustments\" ),",
+    "    99999999,",
+    "    'Processing Status'[[REPORTING_DATE_FK]]]",
+    ")",
+    ""
+  ],
+  "lineageTag": "f696a9d5-74c1-4f86-89f2-ad6cec18eb96"
+}

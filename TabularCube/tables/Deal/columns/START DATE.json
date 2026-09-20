@@ -1,0 +1,7 @@
+{
+  "name": "START DATE",
+  "dataType": "dateTime",
+  "sourceColumn": "DEAL[START DATE]",
+  "formatString": "General Date",
+  "lineageTag": "b92995b4-f323-439c-909e-9c91ac508e30"
+}

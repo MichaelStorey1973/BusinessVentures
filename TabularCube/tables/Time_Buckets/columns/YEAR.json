@@ -1,0 +1,12 @@
+{
+  "name": "YEAR",
+  "dataType": "string",
+  "sourceColumn": "TIME BUCKET[YEAR]",
+  "lineageTag": "9679727f-722a-40d8-82c4-4bbcf08e60b2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

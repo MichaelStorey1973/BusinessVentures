@@ -1,0 +1,12 @@
+{
+  "name": "SUB STRATEGY",
+  "dataType": "string",
+  "sourceColumn": "DEAL[SUB STRATEGY]",
+  "lineageTag": "c0cf5e2b-9ff0-4d0c-a269-bd63b6330f68",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

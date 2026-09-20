@@ -1,0 +1,20 @@
+{
+  "type": "calculated",
+  "name": "RP",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": [
+    "VAR P = 'Processing Status'[PARTITION_NAME]",
+    "VAR P1 = FIND(\"_\", P, 1, 0)",
+    "VAR P2 = FIND(\"_\", P, P1 + 1, 0)",
+    "RETURN",
+    "IF(",
+    "    ISBLANK(P) || P1 = 0 || P2 = 0,",
+    "    BLANK(),",
+    "    MID(P, P1 + 1, P2 - P1 - 1)",
+    ")",
+    ""
+  ],
+  "lineageTag": "9653b07e-bd04-47d9-9448-816ac0c60b5f"
+}

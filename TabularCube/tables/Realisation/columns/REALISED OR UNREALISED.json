@@ -1,0 +1,12 @@
+{
+  "name": "REALISED OR UNREALISED",
+  "dataType": "string",
+  "sourceColumn": "REALISATION[REALISED OR UNREALISED]",
+  "lineageTag": "ce7c09ef-a335-460b-bf19-6d910b618ba0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "calculated",
+  "name": "ID_NEG",
+  "dataType": "int64",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": "'Reporting_Date'[ID]*-1",
+  "lineageTag": "9ae7050b-aa80-4768-a714-1ef5cf9c78dd"
+}

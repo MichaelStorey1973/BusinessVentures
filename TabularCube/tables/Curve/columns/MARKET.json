@@ -1,0 +1,12 @@
+{
+  "name": "MARKET",
+  "dataType": "string",
+  "sourceColumn": "CURVE[MARKET]",
+  "lineageTag": "3b3980bf-652d-43ca-b346-4bcb21553179",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

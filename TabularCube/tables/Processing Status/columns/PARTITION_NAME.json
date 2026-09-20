@@ -1,0 +1,10 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "PARTITION_NAME",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sourceColumn": "Fact_Finance[PARTITION_NAME]",
+  "lineageTag": "29a39bf0-e5bb-4ad0-9229-45d3f5d08638"
+}

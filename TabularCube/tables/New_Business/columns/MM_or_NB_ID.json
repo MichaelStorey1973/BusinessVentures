@@ -1,0 +1,13 @@
+{
+  "name": "MM_or_NB_ID",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "NEW BUSINESS[MM_or_NB_ID]",
+  "lineageTag": "2b104919-0c04-4a1f-9b2b-0a87e30a21ca",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

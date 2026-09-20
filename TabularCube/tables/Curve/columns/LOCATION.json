@@ -1,0 +1,13 @@
+{
+  "name": "LOCATION",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "CURVE[LOCATION]",
+  "lineageTag": "17e8186c-a10c-47be-8e5b-c897fdcf94e5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

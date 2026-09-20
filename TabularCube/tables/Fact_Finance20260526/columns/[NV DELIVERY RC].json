@@ -1,0 +1,13 @@
+{
+  "name": "[NV DELIVERY RC]",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "[NV DELIVERY RC]",
+  "lineageTag": "ea476bc2-b73e-4eb4-a9be-29380fbc930e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

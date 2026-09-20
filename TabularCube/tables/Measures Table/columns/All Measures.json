@@ -1,0 +1,13 @@
+{
+  "name": "All Measures",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "All Measures",
+  "lineageTag": "fc66d0bc-209f-47a1-9f8a-2cc6c208fcdc",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

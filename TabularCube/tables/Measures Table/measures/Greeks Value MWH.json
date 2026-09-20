@@ -1,0 +1,14 @@
+{
+  "name": "Greeks Value MWH",
+  "expression": [
+    "CALCULATE",
+    "( ",
+    "SUM( Fact_Greeks[[GREEK VALUE MWH]]])",
+    "",
+    "    , Source[SOURCE] = \"ENDUR DWH\"",
+    ")"
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Greeks",
+  "lineageTag": "4abf8826-6ed4-473c-ae68-7ff774f0805e"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Fact_Finance20260526",
+  "isHidden": true,
+  "lineageTag": "ed248847-c52f-4443-9a7f-c2b34b78377a",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Exception"
+    },
+    {
+      "name": "TabularEditor_TableGroup",
+      "value": "FACTS\\FINANCE"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

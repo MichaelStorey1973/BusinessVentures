@@ -1,0 +1,13 @@
+{
+  "name": "[NEWBUSINESS_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[NEWBUSINESS_FK]",
+  "lineageTag": "be2edcf1-6251-47be-b73a-d39cc92678fa",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

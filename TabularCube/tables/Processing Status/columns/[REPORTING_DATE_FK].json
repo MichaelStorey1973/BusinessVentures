@@ -1,0 +1,10 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "[REPORTING_DATE_FK]",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sourceColumn": "Fact_Finance[[REPORTING_DATE_FK]]",
+  "lineageTag": "2f9d0bc9-b2dc-4100-97d3-f87cd0150311"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "fn_GetReportingDateFilter",
+  "kind": "m",
+  "expression": [
+    "(BuildTable as table) as text =>",
+    "let",
+    "    IdList =",
+    "        List.Transform(",
+    "            BuildTable[#\"Processing Status[REPORTING_DATE]\"],",
+    "            each Text.From(_)",
+    "        ),",
+    "",
+    "    DaxList =",
+    "        Text.Combine(IdList, \",\"),",
+    "",
+    "    Result =",
+    "        \",KEEPFILTERS ( \" &",
+    "        \"TREATAS( {\" & DaxList & \"} , 'REPORTING DATE'[ID] ) \" &",
+    "        \")\"",
+    "in",
+    "    Result"
+  ],
+  "lineageTag": "cf340332-15d6-4d01-9563-1b75aa9d7181"
+}

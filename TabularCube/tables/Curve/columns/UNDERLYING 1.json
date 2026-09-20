@@ -1,0 +1,13 @@
+{
+  "name": "UNDERLYING 1",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "CURVE[UNDERLYING 1]",
+  "lineageTag": "f14f81bc-8684-448f-b38e-5d46fc856f9b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "REPORTING FISCAL MONTH",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "REPORTING DATE[REPORTING FISCAL MONTH]",
+  "lineageTag": "952abb51-dbf7-4e32-b824-8f4714539ab2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

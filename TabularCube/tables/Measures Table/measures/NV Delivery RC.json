@@ -1,0 +1,14 @@
+{
+  "name": "NV Delivery RC",
+  "expression": [
+    "",
+    "CALCULATE(",
+    "SUM( Fact_Finance[[NV DELIVERY RC]]])",
+    "",
+    "    //, Source[SOURCE] = \"ENDUR DWH\"",
+    ")"
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Finance",
+  "lineageTag": "d5b0867f-c0f1-4e48-8489-68ff0ba71cfb"
+}

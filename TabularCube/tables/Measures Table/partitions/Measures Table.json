@@ -1,0 +1,17 @@
+{
+  "name": "Measures Table",
+  "queryGroup": "Client Facing",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = #table(",
+      "        {\"Measures\"},",
+      "        {}",
+      "    ),",
+      "    #\"Renamed Columns\" = Table.RenameColumns(Source,{{\"Measures\", \"All Measures\"}})",
+      "in",
+      "    #\"Renamed Columns\""
+    ]
+  }
+}

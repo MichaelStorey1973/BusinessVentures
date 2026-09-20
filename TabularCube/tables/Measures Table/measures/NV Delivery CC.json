@@ -1,0 +1,19 @@
+{
+  "name": "NV Delivery CC",
+  "expression": [
+    "IF(",
+    "    NOT ISFILTERED( Contract_Currency[Contract_Currency] ),",
+    "    BLANK(),",
+    "    CALCULATE(",
+    "        SUM( Fact_Finance[[NV DELIVERY CC]]] )",
+    "      ",
+    "       // , Source[SOURCE] = \"ENDUR DWH\"",
+    "    )",
+    ")",
+    "",
+    ""
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Finance",
+  "lineageTag": "e5b34f24-a3f7-406f-9919-5999e4f50d60"
+}

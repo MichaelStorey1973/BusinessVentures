@@ -1,0 +1,20 @@
+{
+  "type": "calculated",
+  "name": "Division",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": [
+    "VAR P = 'Processing Status'[PARTITION_NAME]",
+    "VAR P1 = FIND(\"_\", P, 1, 0)",
+    "VAR P2 = FIND(\"_\", P, P1 + 1, 0)",
+    "VAR P3 = FIND(\"_\", P, P2 + 1, 0)",
+    "RETURN",
+    "IF(",
+    "    P1 = 0 || P2 = 0 || P3 = 0,",
+    "    BLANK(),",
+    "    MID(P, P2 + 1, P3 - P2 - 1)",
+    ")"
+  ],
+  "lineageTag": "3e6fe3f8-b6eb-462f-8030-861a6bcbfa7f"
+}

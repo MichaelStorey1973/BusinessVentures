@@ -1,0 +1,10 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Max Refresh TS",
+  "dataType": "dateTime",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sourceColumn": "[Max Refresh TS]",
+  "lineageTag": "1e0d219c-f646-4a77-b900-71ba427b4c7f"
+}

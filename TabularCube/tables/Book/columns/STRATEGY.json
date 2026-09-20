@@ -1,0 +1,12 @@
+{
+  "name": "STRATEGY",
+  "dataType": "string",
+  "sourceColumn": "BOOK[STRATEGY]",
+  "lineageTag": "b0234d83-bd96-4ce7-a62a-6bb49602c1a6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

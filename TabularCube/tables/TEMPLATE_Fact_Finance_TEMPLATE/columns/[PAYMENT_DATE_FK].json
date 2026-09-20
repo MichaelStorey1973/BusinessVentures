@@ -1,0 +1,7 @@
+{
+  "name": "[PAYMENT_DATE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[PAYMENT_DATE_FK]",
+  "lineageTag": "27fc8a8c-b55c-4b2a-b0c9-70cdb57b8ff4"
+}

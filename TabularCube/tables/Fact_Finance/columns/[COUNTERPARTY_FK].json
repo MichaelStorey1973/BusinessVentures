@@ -1,0 +1,13 @@
+{
+  "name": "[COUNTERPARTY_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[COUNTERPARTY_FK]",
+  "lineageTag": "9e84f90d-3002-4071-a0b7-8c66cbda838e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Realisation",
+  "lineageTag": "cc4ff8bd-105c-4713-86b2-6cb9d6d62b5e",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "QUARTER",
+  "dataType": "string",
+  "sourceColumn": "TIME BUCKET[QUARTER]",
+  "lineageTag": "3cab1c53-526d-4beb-b72d-4f963b8f8e42",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

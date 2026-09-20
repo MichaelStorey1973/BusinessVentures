@@ -1,0 +1,27 @@
+{
+  "name": "CurrentReportingDates",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "",
+      "    DAXText =",
+      "        fn_CurrentReportinfDates(3)",
+      "            ",
+      ",",
+      "",
+      "    // ✅ Execute against SSAS",
+      "    Source =",
+      "        AnalysisServices.Database(",
+      "            \"ARP_TAB_PROD\",",
+      "            \"ARP\",",
+      "            [",
+      "                Query = DAXText,",
+      "                Implementation = \"2.0\"",
+      "            ]",
+      "        )",
+      "in",
+      "    Source"
+    ]
+  }
+}

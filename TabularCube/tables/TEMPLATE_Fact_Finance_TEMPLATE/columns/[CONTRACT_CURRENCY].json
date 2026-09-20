@@ -1,0 +1,7 @@
+{
+  "name": "[CONTRACT_CURRENCY]",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "[CONTRACT_CURRENCY]",
+  "lineageTag": "56063422-3c46-4c25-8f9d-dfdca71ba921"
+}

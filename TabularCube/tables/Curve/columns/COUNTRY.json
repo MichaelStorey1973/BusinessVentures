@@ -1,0 +1,12 @@
+{
+  "name": "COUNTRY",
+  "dataType": "string",
+  "sourceColumn": "CURVE[COUNTRY]",
+  "lineageTag": "e15f9f9b-ab0b-41b9-ab9d-2a7e83c564a9",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

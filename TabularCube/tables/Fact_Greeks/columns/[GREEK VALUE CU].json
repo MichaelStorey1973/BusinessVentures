@@ -1,0 +1,13 @@
+{
+  "name": "[GREEK VALUE CU]",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "[GREEK VALUE CU]",
+  "lineageTag": "ea476bc2-b73e-4eb4-a9be-29380fbc930e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

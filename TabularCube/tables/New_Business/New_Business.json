@@ -1,0 +1,18 @@
+{
+  "name": "New_Business",
+  "lineageTag": "8dcf969c-ae41-4037-819f-d2f06ce68e6c",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

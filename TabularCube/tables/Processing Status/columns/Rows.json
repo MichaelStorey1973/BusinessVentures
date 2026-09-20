@@ -1,0 +1,10 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Rows",
+  "dataType": "int64",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sourceColumn": "[Rows]",
+  "lineageTag": "85d97c90-2e76-4618-a733-71c26cb250c8"
+}

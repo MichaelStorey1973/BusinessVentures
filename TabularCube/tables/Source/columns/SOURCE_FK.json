@@ -1,0 +1,13 @@
+{
+  "name": "SOURCE_FK",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "SOURCE[SOURCE_FK]",
+  "lineageTag": "ce98512a-4f97-4252-acd6-9dbb0858475c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

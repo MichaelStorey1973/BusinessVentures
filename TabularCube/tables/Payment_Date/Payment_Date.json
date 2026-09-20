@@ -1,0 +1,18 @@
+{
+  "name": "Payment_Date",
+  "lineageTag": "f3bbd23b-8201-4688-b14f-5ae906e64c2e",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

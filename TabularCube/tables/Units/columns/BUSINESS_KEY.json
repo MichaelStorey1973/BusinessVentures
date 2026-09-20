@@ -1,0 +1,7 @@
+{
+  "name": "BUSINESS_KEY",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "UNIT[BUSINESS_KEY]",
+  "lineageTag": "70d94e9d-0598-44cf-bef2-330ea9263f76"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "COUNTERPARTY NAME",
+  "dataType": "string",
+  "sourceColumn": "CNTPARTY[COUNTERPARTY NAME]",
+  "lineageTag": "a1c1ddee-8573-48de-8093-121961819f32",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

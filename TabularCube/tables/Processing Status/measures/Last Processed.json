@@ -1,0 +1,7 @@
+{
+  "name": "Last Processed",
+  "expression": "MAX('Processing Status'[Max Refresh TS])",
+  "formatString": "dd/mm/yyyy HH:MM:SS",
+  "isHidden": true,
+  "lineageTag": "04334455-7e8e-4fec-b6e6-45c07bd19f06"
+}

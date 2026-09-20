@@ -1,0 +1,12 @@
+{
+  "name": "BUSINESS LINE",
+  "dataType": "string",
+  "sourceColumn": "BOOK[BUSINESS LINE]",
+  "lineageTag": "0e951d96-d796-4e10-b21b-7c2ad9f1f779",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

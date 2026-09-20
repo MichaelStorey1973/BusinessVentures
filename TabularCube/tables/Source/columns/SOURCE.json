@@ -1,0 +1,12 @@
+{
+  "name": "SOURCE",
+  "dataType": "string",
+  "sourceColumn": "SOURCE[SOURCE]",
+  "lineageTag": "091f75eb-9e1d-4d1c-9c5b-100e6932fab4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

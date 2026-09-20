@@ -1,0 +1,7 @@
+{
+  "name": "REFERENCE",
+  "dataType": "string",
+  "sourceColumn": "DEAL[REFERENCE]",
+  "formatString": "dd.mm.yyyy",
+  "lineageTag": "4b4923a7-732e-45af-944e-40ef20f7daac"
+}

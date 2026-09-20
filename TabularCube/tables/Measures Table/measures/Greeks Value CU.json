@@ -1,0 +1,18 @@
+{
+  "name": "Greeks Value CU",
+  "expression": [
+    "IF(",
+    "    NOT ISFILTERED( 'Units'[UNIT]),",
+    "    BLANK(),",
+    "    CALCULATE",
+    "    (",
+    "        SUM( Fact_Greeks[[GREEK VALUE CU]]] )",
+    "      ",
+    "        , Source[SOURCE] = \"ENDUR DWH\"",
+    "    )",
+    ")"
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Greeks",
+  "lineageTag": "d540db06-5518-4802-97e0-806d2dce603f"
+}

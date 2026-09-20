@@ -1,0 +1,8 @@
+{
+  "name": "REPORTING DATE",
+  "dataType": "dateTime",
+  "sourceColumn": "REPORTING DATE[REPORTING DATE DATE]",
+  "formatString": "dd.mm.yyyy",
+  "sortByColumn": "ID_NEG",
+  "lineageTag": "f92f8e9d-652c-49b9-946c-3a2959f04189"
+}

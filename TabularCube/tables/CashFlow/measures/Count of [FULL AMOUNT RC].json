@@ -1,0 +1,12 @@
+{
+  "name": "Count of [FULL AMOUNT RC]",
+  "expression": "COUNTA('CashFlow'[FULL AMOUNT RC])",
+  "isHidden": true,
+  "lineageTag": "962ff35e-884f-4390-a757-53ff179c0b34",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

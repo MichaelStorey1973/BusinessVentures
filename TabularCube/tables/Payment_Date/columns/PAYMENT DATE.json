@@ -1,0 +1,7 @@
+{
+  "name": "PAYMENT DATE",
+  "dataType": "dateTime",
+  "sourceColumn": "PAYMENT DATE[PAYMENT DATE]",
+  "formatString": "General Date",
+  "lineageTag": "e17ce25d-2b42-4cd7-a51d-672402d8b002"
+}

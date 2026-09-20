@@ -1,0 +1,13 @@
+{
+  "name": "[CASHFLOW_TYPE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[CASHFLOW_TYPE_FK]",
+  "lineageTag": "b2bedd52-a7dc-4aeb-8060-1464ecb34772",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

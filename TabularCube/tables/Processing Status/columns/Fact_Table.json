@@ -1,0 +1,22 @@
+{
+  "type": "calculated",
+  "name": "Fact_Table",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": [
+    "VAR P = 'Processing Status'[PARTITION_NAME]",
+    "",
+    "",
+    "",
+    "VAR P1 = FIND(\"_\", P, 1, 0)",
+    "RETURN",
+    "IF(",
+    "    ISBLANK(P) || P = \"\" || P1 = 0,",
+    "    BLANK(),",
+    "    LEFT(P, P1 - 1)",
+    ")",
+    ""
+  ],
+  "lineageTag": "d49b0cc8-6436-43e7-9bff-d4deb9a36345"
+}

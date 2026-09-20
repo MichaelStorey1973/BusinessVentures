@@ -1,0 +1,46 @@
+{
+  "name": "fn_Dim_Deal_TEST",
+  "kind": "m",
+  "expression": [
+    "let ",
+    "    DAXQuery =",
+    " \"",
+    "",
+    "",
+    "EVALUATE",
+    "SUMMARIZECOLUMNS(",
+    "    DEAL[SUB STRATEGY],",
+    "    DEAL[DEAL ID],",
+    "    DEAL[TRANSACTION TYPE],",
+    "    DEAL[TRADE DATE],",
+    "    DEAL[START DATE],",
+    "    DEAL[END DATE],",
+    "    DEAL[PERIOD],",
+    "    DEAL[PROFILE],",
+    "    DEAL[DEAL_FK],    ",
+    "    /* Filters */",
+    "    KEEPFILTERS(TREATAS({\"\"YTE\"\"}, 'REALISATION GROUP'[REALISATION PERIOD])),",
+    "    KEEPFILTERS(TREATAS({\"\"MANAGEMENT\"\"}, 'REPORT PARAMETER'[VIEW])),",
+    "    KEEPFILTERS(TREATAS({\"\"CMT\"\"}, BOOK[DIVISION]))",
+    "    ",
+    "    ,\"\"FULL AMOUNT RC\"\", [FULL AMOUNT RC]",
+    ")",
+    "",
+    "",
+    "\"",
+    "in",
+    "    DAXQuery"
+  ],
+  "queryGroup": "Dimension_Functions",
+  "lineageTag": "181d2124-f45e-4bd1-a018-5e82877e9be8",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Function"
+    }
+  ]
+}

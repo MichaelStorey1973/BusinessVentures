@@ -1,0 +1,20 @@
+{
+  "type": "calculated",
+  "name": "DXXX",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "expression": [
+    "VAR P = 'Processing Status'[PARTITION_NAME]",
+    "VAR P1 = FIND(\"_\", P, 1, 0)",
+    "VAR P2 = FIND(\"_\", P, P1 + 1, 0)",
+    "RETURN",
+    "IF(",
+    "    ISBLANK(P) || P1 = 0 || P2 = 0,",
+    "    BLANK(),",
+    "    MID(P, P1 + 1, P2 - P1 - 1)",
+    ")",
+    ""
+  ],
+  "lineageTag": "0783d63a-34b4-4f11-b320-8a26f202b7ce"
+}

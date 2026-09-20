@@ -1,0 +1,12 @@
+{
+  "name": "LEG TYPE",
+  "dataType": "string",
+  "sourceColumn": "CASH FLOW TYPE[LEG TYPE]",
+  "lineageTag": "4964a86e-e336-40b4-bc11-6e7ba62ff8f1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

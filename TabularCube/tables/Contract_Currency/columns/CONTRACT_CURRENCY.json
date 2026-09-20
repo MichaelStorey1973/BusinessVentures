@@ -1,0 +1,12 @@
+{
+  "name": "CONTRACT_CURRENCY",
+  "dataType": "string",
+  "sourceColumn": "CONTRACT CURRENCY[CONTRACT_CURRENCY]",
+  "lineageTag": "164cf147-c876-4783-88cf-853e0cc30799",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

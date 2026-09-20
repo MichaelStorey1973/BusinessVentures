@@ -1,0 +1,42 @@
+{
+  "name": "Business Hierarchy",
+  "lineageTag": "35527cf4-7d9c-4c01-88c3-49f6b272c39e",
+  "levels": [
+    {
+      "name": "BUSINESS AREA",
+      "ordinal": 2,
+      "column": "BUSINESS AREA",
+      "lineageTag": "4135dcf7-84fa-4fb9-bd1b-ab3b79c7a2b8"
+    },
+    {
+      "name": "BUSINESS LINE",
+      "ordinal": 3,
+      "column": "BUSINESS LINE",
+      "lineageTag": "fa05a88d-b5e5-49fc-87ea-50752d1c3168"
+    },
+    {
+      "name": "BUSINESS GROUP",
+      "ordinal": 1,
+      "column": "BUSINESS GROUP",
+      "lineageTag": "9e1c9b42-6586-4b9a-bee8-7bfce4cd74fc"
+    },
+    {
+      "name": "BOOK",
+      "ordinal": 5,
+      "column": "BOOK",
+      "lineageTag": "66fdb769-5b0c-41b3-8224-962758fb2e8b"
+    },
+    {
+      "name": "DIVISION",
+      "ordinal": 0,
+      "column": "DIVISION",
+      "lineageTag": "970bea6f-368a-4452-a628-8201ee872f36"
+    },
+    {
+      "name": "STRATEGY",
+      "ordinal": 4,
+      "column": "STRATEGY",
+      "lineageTag": "c15f18df-8cbd-4f1b-a086-cecda4a65818"
+    }
+  ]
+}

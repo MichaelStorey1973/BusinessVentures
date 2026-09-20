@@ -1,0 +1,31 @@
+{
+  "name": "Processing Status",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "VAR F = ",
+      "SUMMARIZE(",
+      "    Fact_Finance,",
+      "    Fact_Finance[PARTITION_NAME],",
+      "    'Fact_Finance'[[REPORTING_DATE_FK]]],",
+      "    \"Rows\", COUNTROWS(Fact_Finance),",
+      "    \"Max Refresh TS\", MAX(Fact_Finance[EXTRACT_TS])",
+      ")",
+      "VAR G = ",
+      "SUMMARIZE(",
+      "    Fact_Greeks,",
+      "    Fact_Greeks[PARTITION_NAME],",
+      "    Fact_Greeks[[REPORTING_DATE_FK]]], ",
+      "    \"Rows\", COUNTROWS(Fact_Greeks),",
+      "    \"Max Refresh TS\", MAX(Fact_Greeks[EXTRACT_TS])",
+      ")",
+      "",
+      "",
+      "",
+      "",
+      "RETURN UNION(F , G )",
+      ""
+    ]
+  }
+}

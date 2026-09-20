@@ -1,0 +1,13 @@
+{
+  "name": "REPORTING FISCAL QUARTER",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "REPORTING DATE[REPORTING FISCAL QUARTER]",
+  "lineageTag": "1ba96b97-aee7-4431-87cb-46af53d6da9c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

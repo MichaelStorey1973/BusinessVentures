@@ -1,0 +1,13 @@
+{
+  "name": "BOOK_FK",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "BOOK[BOOK_FK]",
+  "lineageTag": "0bbfa6bb-5eeb-4b3d-99b0-a38db9433f8f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

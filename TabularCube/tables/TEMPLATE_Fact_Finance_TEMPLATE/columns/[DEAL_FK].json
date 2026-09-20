@@ -1,0 +1,7 @@
+{
+  "name": "[DEAL_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[DEAL_FK]",
+  "lineageTag": "05e9b821-3a92-44a9-9248-535f55c66ed5"
+}

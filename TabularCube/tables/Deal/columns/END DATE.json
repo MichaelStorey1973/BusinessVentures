@@ -1,0 +1,7 @@
+{
+  "name": "END DATE",
+  "dataType": "dateTime",
+  "sourceColumn": "DEAL[END DATE]",
+  "formatString": "dd.mm.yyyy",
+  "lineageTag": "1d00f154-68ca-4d3b-a636-15b2ccccbaf2"
+}

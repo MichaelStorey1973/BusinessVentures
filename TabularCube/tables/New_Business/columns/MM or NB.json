@@ -1,0 +1,12 @@
+{
+  "name": "MM or NB",
+  "dataType": "string",
+  "sourceColumn": "NEW BUSINESS[MM or NB]",
+  "lineageTag": "1863d45e-36e6-4cd2-b71b-aaefccc4fbda",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

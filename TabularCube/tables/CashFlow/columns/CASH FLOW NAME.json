@@ -1,0 +1,12 @@
+{
+  "name": "CASH FLOW NAME",
+  "dataType": "string",
+  "sourceColumn": "CASH FLOW TYPE[CASH FLOW NAME]",
+  "lineageTag": "d0c17c13-a956-48d5-8502-9bf94049d4f2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

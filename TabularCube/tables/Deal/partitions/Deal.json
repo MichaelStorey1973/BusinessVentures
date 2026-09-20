@@ -1,0 +1,43 @@
+{
+  "name": "Deal",
+  "queryGroup": "Dimensions",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "",
+      "    pBusinessGroup = \"\", ",
+      "    pMaxReportingDateRaw = 0 , ",
+      "",
+      "    pMaxReportingDate =",
+      "        if pMaxReportingDateRaw = null or pMaxReportingDateRaw = \"\" then",
+      "            null",
+      "        else",
+      "            Number.From(pMaxReportingDateRaw),",
+      "",
+      "    // ✅ Call your function (hardcoded Adjustments / NonAdjustment)",
+      "    DAXText =",
+      "        fn_Dim_Deal(",
+      "            \"Non Adjustements\",          // or \"NonAdjustment\"",
+      "            pBusinessGroup,",
+      "            pMaxReportingDate,",
+      "            \"Single Day Non Adjustments: \" & Text.From(DateTime.LocalNow())",
+      "            )",
+      "            ",
+      ",",
+      "",
+      "    // ✅ Execute against SSAS",
+      "    Source =",
+      "        AnalysisServices.Database(",
+      "            \"ARP_TAB_PROD\",",
+      "            \"ARP\",",
+      "            [",
+      "                Query = DAXText,",
+      "                Implementation = \"2.0\"",
+      "            ]",
+      "        )",
+      "in",
+      "    Source"
+    ]
+  }
+}

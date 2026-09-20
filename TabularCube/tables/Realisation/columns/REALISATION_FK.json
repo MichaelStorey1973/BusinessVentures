@@ -1,0 +1,13 @@
+{
+  "name": "REALISATION_FK",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "REALISATION[REALISATION_FK]",
+  "lineageTag": "750fce84-d3bb-4584-9f11-97ff4a2d1499",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Total Rows",
+  "expression": "COUNTROWS('Processing Status')",
+  "isHidden": true,
+  "lineageTag": "f45783dc-6b18-4c47-bb41-a7f982ce3896"
+}

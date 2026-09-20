@@ -1,0 +1,15 @@
+{
+  "name": "Processing Status",
+  "isHidden": true,
+  "lineageTag": "5250973b-a300-4875-8b68-59b4585782ee",
+  "annotations": [
+    {
+      "name": "TabularEditor_TableGroup",
+      "value": "Config"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "FISCIAL QUARTER",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "TIME BUCKET[FISCIAL QUARTER]",
+  "lineageTag": "654f33b5-5e97-43ca-b2ca-b650a830f7d8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

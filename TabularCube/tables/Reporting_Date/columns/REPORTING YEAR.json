@@ -1,0 +1,6 @@
+{
+  "name": "REPORTING YEAR",
+  "dataType": "string",
+  "sourceColumn": "REPORTING DATE[REPORTING YEAR]",
+  "lineageTag": "4e615838-117a-4f56-a57c-225c5f48cb7c"
+}

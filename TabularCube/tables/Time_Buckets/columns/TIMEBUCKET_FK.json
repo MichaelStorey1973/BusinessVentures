@@ -1,0 +1,13 @@
+{
+  "name": "TIMEBUCKET_FK",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "TIME BUCKET[TIMEBUCKET_FK]",
+  "lineageTag": "bc1b3dcb-4de7-4274-b2cf-6d01b697cfb4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

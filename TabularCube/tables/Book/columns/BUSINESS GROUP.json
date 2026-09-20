@@ -1,0 +1,12 @@
+{
+  "name": "BUSINESS GROUP",
+  "dataType": "string",
+  "sourceColumn": "BOOK[BUSINESS GROUP]",
+  "lineageTag": "4621a511-602c-49a0-b4ed-6a7b254fcf5f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

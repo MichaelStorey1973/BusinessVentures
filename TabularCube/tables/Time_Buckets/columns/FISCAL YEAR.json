@@ -1,0 +1,13 @@
+{
+  "name": "FISCAL YEAR",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "TIME BUCKET[FISCAL YEAR]",
+  "lineageTag": "09de5a48-0be3-4d0d-afcb-680ada1fb6ef",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

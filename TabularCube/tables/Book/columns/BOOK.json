@@ -1,0 +1,12 @@
+{
+  "name": "BOOK",
+  "dataType": "string",
+  "sourceColumn": "BOOK[BOOK]",
+  "lineageTag": "cd7c3ad3-0baf-4d7f-b85f-84787799eac0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

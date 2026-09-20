@@ -1,0 +1,12 @@
+{
+  "name": "PAYMENT MONTH",
+  "dataType": "string",
+  "sourceColumn": "PAYMENT DATE[PAYMENT MONTH]",
+  "lineageTag": "1a9c50c2-9e96-4f5a-8b7c-611c3d85edc1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

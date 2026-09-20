@@ -1,0 +1,7 @@
+{
+  "name": "TRADE DATE",
+  "dataType": "dateTime",
+  "sourceColumn": "DEAL[TRADE DATE]",
+  "formatString": "dd.mm.yyyy",
+  "lineageTag": "47fe93a1-08d3-4882-a817-43c3fa3b1a1d"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "PROFILE",
+  "dataType": "string",
+  "sourceColumn": "DEAL[PROFILE]",
+  "lineageTag": "694282f8-bfe0-4f1c-9497-4bc979357c25",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

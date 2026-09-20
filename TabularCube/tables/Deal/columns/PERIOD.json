@@ -1,0 +1,12 @@
+{
+  "name": "PERIOD",
+  "dataType": "string",
+  "sourceColumn": "DEAL[PERIOD]",
+  "lineageTag": "79eab31e-7799-456d-ae22-f8b239d44945",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

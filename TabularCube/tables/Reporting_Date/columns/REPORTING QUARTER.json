@@ -1,0 +1,6 @@
+{
+  "name": "REPORTING QUARTER",
+  "dataType": "string",
+  "sourceColumn": "REPORTING DATE[REPORTING QUARTER]",
+  "lineageTag": "50ac18b9-40ca-4e6f-8280-1a778f40be66"
+}

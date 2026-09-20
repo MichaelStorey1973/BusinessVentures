@@ -1,0 +1,7 @@
+{
+  "name": "EXTRACT_TS",
+  "dataType": "dateTime",
+  "isHidden": true,
+  "sourceColumn": "[EXTRACT_TS]",
+  "lineageTag": "b5532509-8e63-44e6-9fb5-1c3a398e3d7a"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "CURVE",
+  "dataType": "string",
+  "sourceColumn": "CURVE[CURVE]",
+  "lineageTag": "575ef145-ce03-45bb-96aa-1dc33ad64d24",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

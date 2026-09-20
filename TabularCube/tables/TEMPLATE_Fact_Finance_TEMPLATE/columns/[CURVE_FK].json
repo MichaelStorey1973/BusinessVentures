@@ -1,0 +1,7 @@
+{
+  "name": "[CURVE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[CURVE_FK]",
+  "lineageTag": "06b1ba9d-066c-49af-a371-072c718fe998"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "BUSINESS AREA",
+  "dataType": "string",
+  "sourceColumn": "BOOK[BUSINESS AREA]",
+  "lineageTag": "56901ff9-4fde-46ba-be9e-4f6b6034f047",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "[CASHFLOW_TYPE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[CASHFLOW_TYPE_FK]",
+  "lineageTag": "cae6a60a-ef91-4f4f-8d9e-e95da3e5b77e"
+}

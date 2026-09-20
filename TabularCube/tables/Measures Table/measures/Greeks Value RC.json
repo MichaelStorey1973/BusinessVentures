@@ -1,0 +1,14 @@
+{
+  "name": "Greeks Value RC",
+  "expression": [
+    "CALCULATE",
+    "( ",
+    "SUM( Fact_Greeks[[GREEK VALUE RC]]])",
+    "",
+    "    , Source[SOURCE] = \"ENDUR DWH\"",
+    ")"
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Greeks",
+  "lineageTag": "027b09b4-62b3-4581-876c-426ff7fdc513"
+}

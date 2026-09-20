@@ -1,0 +1,13 @@
+{
+  "name": "[DEAL_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[DEAL_FK]",
+  "lineageTag": "9fc0393b-ad82-4624-bdbd-30b88682e806",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

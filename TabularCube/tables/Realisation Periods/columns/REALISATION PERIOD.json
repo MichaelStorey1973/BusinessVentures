@@ -1,0 +1,6 @@
+{
+  "name": "REALISATION PERIOD",
+  "dataType": "string",
+  "sourceColumn": "REALISATION GROUP[REALISATION PERIOD]",
+  "lineageTag": "70d94e9d-0598-44cf-bef2-330ea9263f76"
+}

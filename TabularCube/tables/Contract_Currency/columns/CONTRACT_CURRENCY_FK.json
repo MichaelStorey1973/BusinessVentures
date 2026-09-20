@@ -1,0 +1,13 @@
+{
+  "name": "CONTRACT_CURRENCY_FK",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "CONTRACT CURRENCY[CONTRACT_CURRENCY_FK]",
+  "lineageTag": "9ff7eda8-1e5f-4d61-a969-5477b044fdbe",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

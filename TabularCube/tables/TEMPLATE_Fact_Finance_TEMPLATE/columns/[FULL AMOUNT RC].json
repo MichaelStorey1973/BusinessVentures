@@ -1,0 +1,13 @@
+{
+  "name": "[FULL AMOUNT RC]",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "[FULL AMOUNT RC]",
+  "lineageTag": "ee8f88d0-6a71-4cee-85bf-df3a1f48734a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

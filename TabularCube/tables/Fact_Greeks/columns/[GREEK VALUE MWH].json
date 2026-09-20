@@ -1,0 +1,13 @@
+{
+  "name": "[GREEK VALUE MWH]",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "[GREEK VALUE MWH]",
+  "lineageTag": "2d3c0859-dffc-4e17-87b8-55186e46db3b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

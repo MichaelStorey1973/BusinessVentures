@@ -1,0 +1,13 @@
+{
+  "name": "[GREEK VALUE RC]",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "[GREEK VALUE RC]",
+  "lineageTag": "7231b5ab-7f73-4fea-9947-3eaa2294a29a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

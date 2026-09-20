@@ -1,0 +1,13 @@
+{
+  "name": "[CURVE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[CURVE_FK]",
+  "lineageTag": "2b447dc1-328e-4148-b9b2-3caa9b1f9271",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "TKV-BusinessVentures",
+  "id": "a3f5aadd-0974-4478-8cd2-7503978eac7c",
+  "compatibilityLevel": 1600,
+  "model": {
+    "name": "Surendra",
+    "culture": "en-GB",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-GB",
+    "queryGroups": [
+      {
+        "folder": "Client Facing",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "folder": "Dimensions",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "folder": "Fact_Finance",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "folder": "Query_Templates",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "folder": "Dimension_Functions",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "4"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Fact_Finance_Base_Query\",\"fn_Dim_Deal\",\"Dim_Deal\",\"Fact_Finance_TEMPLATE\",\"Fact_Finance20260601\",\"Fact_Finance20260602\",\"Fact_Finance20260603\",\"Fact_Finance20260604\",\"Fact_Finance20260605\",\"Query\",\"Dim_CashFlow\",\"fn_Dim_Counterparty\",\"Dim_Counterparty\",\"Measures Table\",\"fn_Dim_Reporting_Date\",\"Dim_Reporting_Date\",\"fn_Dim_Book\",\"Dim_Book\",\"fn_Dim_New_Business\",\"Dim_New_Business\",\"fn_Time_Buckets\",\"Dim_Time_Buckets\",\"fn_Dim_Curves\",\"Dim_Curve\",\"fn_Realised_Unrealised\",\"Dim_Realisation\",\"fn_Dim_Contract_Currency\",\"Dim_Contract_Currency\",\"fn_Dim_Payment_Date\",\"Dim_Payment_Date\",\"fn_Dim_Source\",\"Dim_Source\",\"Fact_Finance20260501\",\"Fact_Finance20260504\",\"Fact_Finance20260505\",\"Fact_Finance20260506\",\"Fact_Finance20260507\",\"Fact_Finance20260508\",\"Fact_Finance20260511\",\"Fact_Finance20260512\",\"Fact_Finance20260513\",\"Fact_Finance20260514\",\"Fact_Finance20260515\",\"Fact_Finance20260518\",\"Fact_Finance20260519\",\"Fact_Finance20260520\",\"Fact_Finance20260521\",\"Fact_Finance20260522\",\"Fact_Finance20260525\",\"Fact_Finance20260526\",\"Fact_Finance20260527\",\"Fact_Finance20260528\",\"Fact_Finance20260529\",\"Fact_Finance20260608\",\"Fact_Finance20260609\",\"Fact_Finance20260610\",\"Fact_Finance20260611\",\"Fact_Finance20260612\",\"Fact_Finance20260615\",\"Fact_Finance20260616\",\"Fact_Finance20260617\",\"Fact_Finance20260618\",\"Fact_Finance20260619\",\"Fact_Finance20260622\",\"Fact_Finance20260623\",\"Fact_Finance20260624\",\"Fact_Finance20260625\",\"Fact_Finance20260626\",\"Fact_Finance20260629\",\"Fact_Finance20260630\",\"Fact_Finance20260701\",\"Fact_Finance20260702\",\"Fact_Finance20260703\",\"Fact_Finance20260706\",\"Fact_Finance20260707\",\"Fact_Finance20260708\",\"Fact_Finance20260709\",\"Fact_Finance20260710\",\"Fact_Finance20260713\",\"Fact_Finance20260714\",\"Fact_Finance20260715\",\"Fact_Finance20260716\",\"Fact_Finance20260717\",\"Fact_Finance20260720\",\"Fact_Finance20260721\",\"Fact_Finance20260722\",\"Fact_Finance20260723\",\"Fact_Finance20260724\",\"Fact_Finance20260727\",\"Fact_Finance20260728\",\"Fact_Finance20260729\",\"Fact_Finance20260730\",\"Fact_Finance20260731\",\"Fact_Finance20260803\",\"Fact_Finance20260804\",\"Fact_Finance20260805\",\"Fact_Finance20260806\",\"Fact_Finance20260807\",\"Fact_Finance20260810\",\"Fact_Finance20260811\",\"Fact_Finance20260812\",\"Fact_Finance20260813\",\"Fact_Finance20260814\",\"Fact_Finance20260817\",\"Fact_Finance20260818\",\"Fact_Finance20260819\",\"Fact_Finance20260820\",\"Fact_Finance20260821\",\"Fact_Finance20260824\",\"Fact_Finance20260825\",\"Fact_Finance20260826\",\"Fact_Finance20260827\",\"Fact_Finance20260828\",\"Fact_Finance20260831\",\"Fact_Finance20260901\",\"Fact_Finance20260902\",\"Fact_Finance20260903\",\"Fact_Finance20260904\",\"Fact_Finance20260907\",\"Fact_Finance20260908\",\"Fact_Finance20260909\",\"Fact_Finance20260910\",\"Fact_Finance20260911\",\"Fact_Finance20260914\",\"Fact_Finance20260915\",\"Fact_Finance20260916\",\"Fact_Finance20260917\",\"Fact_Finance20260918\",\"Fact_Finance20260921\",\"Fact_Finance20260922\",\"Fact_Finance20260923\",\"Fact_Finance20260924\",\"Fact_Finance20260925\",\"Fact_Finance20260928\",\"Fact_Finance20260929\",\"Fact_Finance20260930\",\"Fact_Finance20261001\",\"Fact_Finance20260531\"]"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"IgnoreIncrementalRefreshPartitions\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":true,\"LocalPerspectives\":true,\"LocalRelationships\":true,\"Levels\":[\"Data Sources\",\"Perspectives\",\"Relationships\",\"Roles\",\"Shared Expressions\",\"Tables\",\"Tables/Calculation Items\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Translations\"]}"
+      },
+      {
+        "name": "TabularEditor_Perspectives",
+        "value": "[]"
+      }
+    ]
+  }
+}

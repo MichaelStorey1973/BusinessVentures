@@ -1,0 +1,13 @@
+{
+  "name": "[PAYMENT_DATE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[PAYMENT_DATE_FK]",
+  "lineageTag": "671cba1a-5734-4edd-9470-4c3ddfc85056",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

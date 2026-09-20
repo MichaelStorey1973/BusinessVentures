@@ -1,0 +1,12 @@
+{
+  "name": "TRANSACTION TYPE",
+  "dataType": "string",
+  "sourceColumn": "DEAL[TRANSACTION TYPE]",
+  "lineageTag": "cc7f708f-7099-4908-a5d0-6f2dea08850e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

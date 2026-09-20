@@ -1,0 +1,7 @@
+{
+  "name": "[SOURCE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[SOURCE_FK]",
+  "lineageTag": "1ea01b7a-faec-446e-93c9-8fcbb73ac3a8"
+}

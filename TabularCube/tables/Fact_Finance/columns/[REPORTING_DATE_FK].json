@@ -1,0 +1,13 @@
+{
+  "name": "[REPORTING_DATE_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[REPORTING_DATE_FK]",
+  "lineageTag": "0a352209-bf8a-473e-85f5-aa4d6c260c18",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

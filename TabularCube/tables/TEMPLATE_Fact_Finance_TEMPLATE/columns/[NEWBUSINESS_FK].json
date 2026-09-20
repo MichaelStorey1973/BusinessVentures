@@ -1,0 +1,7 @@
+{
+  "name": "[NEWBUSINESS_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[NEWBUSINESS_FK]",
+  "lineageTag": "3bde63d9-0847-4561-9ce4-8e1f61ce83a5"
+}

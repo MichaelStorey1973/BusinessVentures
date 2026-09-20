@@ -1,0 +1,13 @@
+{
+  "name": "ID",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "REPORTING DATE[ID]",
+  "lineageTag": "ecb33037-b068-423f-960c-a635cd9d1f8a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

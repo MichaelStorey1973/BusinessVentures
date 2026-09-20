@@ -1,0 +1,7 @@
+{
+  "name": "[CONTRACT_CURRENCY_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[CONTRACT_CURRENCY_FK]",
+  "lineageTag": "63b9c104-54dc-4e34-b01c-8b6d34f48b2a"
+}

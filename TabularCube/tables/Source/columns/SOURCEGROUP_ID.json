@@ -1,0 +1,13 @@
+{
+  "name": "SOURCEGROUP_ID",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "SOURCE[SOURCEGROUP_ID]",
+  "lineageTag": "0ca9fd4e-19ea-4f60-be47-42a97e714116",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Fact_Greeks_20260526",
+  "isHidden": true,
+  "lineageTag": "33bf594b-ffd5-45c9-b4c4-f997bd4b697e",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Exception"
+    },
+    {
+      "name": "TabularEditor_TableGroup",
+      "value": "FACTS\\GREEKS"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

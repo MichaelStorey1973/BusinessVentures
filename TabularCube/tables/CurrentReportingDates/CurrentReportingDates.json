@@ -1,0 +1,15 @@
+{
+  "name": "CurrentReportingDates",
+  "isHidden": true,
+  "lineageTag": "1fb455d7-2113-464f-9fb8-078ebdc73d68",
+  "annotations": [
+    {
+      "name": "TabularEditor_TableGroup",
+      "value": "Config"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

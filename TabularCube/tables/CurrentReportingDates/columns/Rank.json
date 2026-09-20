@@ -1,0 +1,6 @@
+{
+  "name": "Rank",
+  "dataType": "int64",
+  "sourceColumn": "[Rank]",
+  "lineageTag": "abe9663f-b799-4e4e-9ad7-828ef6958d46"
+}

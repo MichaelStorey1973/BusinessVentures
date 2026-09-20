@@ -1,0 +1,28 @@
+{
+  "name": "Full Amount RC",
+  "expression": [
+    "",
+    "  VAR X =   SUM( Fact_Finance[[FULL AMOUNT RC]]] )",
+    "",
+    "",
+    "VAR CurrentRD =",
+    "    SELECTEDVALUE ( 'REPORTING_DATE'[ID] )",
+    "",
+    "VAR RDExists =",
+    "    CALCULATE (",
+    "        COUNTROWS ( 'Processing Status' ),",
+    "        'Processing Status'[REPORTING_DATE] = CurrentRD",
+    "    ) > 0",
+    "",
+    "RETURN",
+    "    IF (",
+    "        RDExists,",
+    "        X,",
+    "        BLANK()",
+    "    )",
+    ""
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Finance",
+  "lineageTag": "808f0179-b2dc-4c78-b981-91a2be98d75b"
+}

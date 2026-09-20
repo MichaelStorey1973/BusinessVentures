@@ -1,0 +1,13 @@
+{
+  "name": "Volume MWH",
+  "expression": [
+    "",
+    "",
+    "",
+    "    SUM( Fact_Finance[[VOLUME MWH]]])",
+    ""
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Volume",
+  "lineageTag": "1eede45f-9e50-4fd6-b06d-ffd7027c1ed0"
+}

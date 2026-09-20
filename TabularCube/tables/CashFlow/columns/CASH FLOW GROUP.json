@@ -1,0 +1,13 @@
+{
+  "name": "CASH FLOW GROUP",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "CASH FLOW TYPE[CASH FLOW GROUP]",
+  "lineageTag": "9fd48484-e283-48ff-b6a2-c7fd473d61b7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

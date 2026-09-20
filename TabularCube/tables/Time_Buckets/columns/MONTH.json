@@ -1,0 +1,12 @@
+{
+  "name": "MONTH",
+  "dataType": "string",
+  "sourceColumn": "TIME BUCKET[MONTH]",
+  "lineageTag": "5a96b881-6960-430b-974d-bbe79def076e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

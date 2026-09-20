@@ -1,0 +1,12 @@
+{
+  "name": "UNDERLYING 3",
+  "dataType": "string",
+  "sourceColumn": "CURVE[UNDERLYING 3]",
+  "lineageTag": "32c2b57a-8ccf-473c-8f1b-d3ec721275d3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

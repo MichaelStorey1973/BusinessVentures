@@ -1,0 +1,12 @@
+{
+  "name": "PAYMENT QUARTER",
+  "dataType": "string",
+  "sourceColumn": "PAYMENT DATE[PAYMENT QUARTER]",
+  "lineageTag": "5e74d7c4-24af-4f4a-b82e-4044d85ce11b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

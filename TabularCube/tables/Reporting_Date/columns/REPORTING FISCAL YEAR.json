@@ -1,0 +1,13 @@
+{
+  "name": "REPORTING FISCAL YEAR",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "REPORTING DATE[REPORTING FISCAL YEAR]",
+  "lineageTag": "450bf65a-8132-456e-8c99-126ca2fa1743",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

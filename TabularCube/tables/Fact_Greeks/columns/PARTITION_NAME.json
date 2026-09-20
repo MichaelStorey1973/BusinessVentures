@@ -1,0 +1,7 @@
+{
+  "name": "PARTITION_NAME",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "[PARTITION_NAME]",
+  "lineageTag": "0cd4ffb8-8cfb-46cc-8a41-dde641cbfbda"
+}

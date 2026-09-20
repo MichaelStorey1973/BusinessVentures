@@ -1,0 +1,13 @@
+{
+  "name": "COUNTERPARTY GROUP",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "CNTPARTY[COUNTERPARTY GROUP]",
+  "lineageTag": "b23de6d5-b089-46d5-9f67-2965db7452e8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

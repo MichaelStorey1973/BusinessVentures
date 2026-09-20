@@ -1,0 +1,13 @@
+{
+  "name": "FISCIAL MONTH",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "TIME BUCKET[FISCIAL MONTH]",
+  "lineageTag": "60940dd8-2d59-4952-9ad1-f440956a85f8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

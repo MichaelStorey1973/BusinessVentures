@@ -1,0 +1,12 @@
+{
+  "name": "COUNTERPARTY INTERNAL OR EXTERNAL",
+  "dataType": "string",
+  "sourceColumn": "CNTPARTY[COUNTERPARTY INTERNAL OR EXTERNAL]",
+  "lineageTag": "595c0190-488b-464f-ae4c-08f56099d3b7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

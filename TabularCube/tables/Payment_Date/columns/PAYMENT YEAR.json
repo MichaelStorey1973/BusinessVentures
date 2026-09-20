@@ -1,0 +1,12 @@
+{
+  "name": "PAYMENT YEAR",
+  "dataType": "string",
+  "sourceColumn": "PAYMENT DATE[PAYMENT YEAR]",
+  "lineageTag": "252d548b-85ff-48e3-a501-fa3c6376b1ee",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "[TIMEBUCKET_FK]",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "[TIMEBUCKET_FK]",
+  "lineageTag": "8a510d9b-2e1e-4ec5-b0a1-0c3ff3e2c0b9"
+}

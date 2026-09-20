@@ -1,0 +1,6 @@
+{
+  "name": "ID",
+  "dataType": "int64",
+  "sourceColumn": "REPORTING DATE[ID]",
+  "lineageTag": "14f04267-8e97-44b9-8376-83e073e4c3d6"
+}

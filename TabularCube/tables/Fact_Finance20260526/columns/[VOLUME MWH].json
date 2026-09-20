@@ -1,0 +1,7 @@
+{
+  "name": "[VOLUME MWH]",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "[VOLUME MWH]",
+  "lineageTag": "df69e6c1-8b56-49e9-ade0-14a24f90905d"
+}

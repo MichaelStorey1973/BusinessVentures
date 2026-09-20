@@ -1,0 +1,12 @@
+{
+  "name": "DIVISION",
+  "dataType": "string",
+  "sourceColumn": "BOOK[DIVISION]",
+  "lineageTag": "28342183-0d8f-4518-b0f9-f48298e9a2df",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isText\":true}"
+    }
+  ]
+}
