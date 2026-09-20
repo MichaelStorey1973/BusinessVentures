@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.AnalysisServices.Tabular;
 using Microsoft.AnalysisServices.AdomdClient;
+using TabularEditor.TOMWrapper;
 
 public string PBIServer =
     "DataSource=powerbi://api.powerbi.com/v1.0/myorg/TKV-BusinessVentures-PRD";
@@ -12,15 +12,15 @@ public string PBIServerName =
 
 public string PBIDatabase = "TKV-BusinessVentures";
 
-Output(GetDBName(PBIServer, PBIDatabase));
-
 List<PartitionProcessingStatus> processingStatus =
-    GetProcessingStatus(PBIServer, PBIDatabase);
+    GetProcessingStatus();
 
-foreach (var item in processingStatus)
+foreach (PartitionProcessingStatus item in processingStatus)
 {
     Output(
         item.TableName
+        + " | "
+        + item.TableGroup
         + " | "
         + item.PartitionName
         + " | "
@@ -34,125 +34,58 @@ foreach (var item in processingStatus)
             : " | " + item.ErrorMessage));
 }
 
-public Microsoft.AnalysisServices.Tabular.Database GetDBName(
-    string serverConnectionString,
-    string databaseName)
-{
-    var server = new Microsoft.AnalysisServices.Tabular.Server();
-
-    try
-    {
-        server.Connect(serverConnectionString);
-
-        return server.Databases
-            .Cast<Microsoft.AnalysisServices.Tabular.Database>()
-            .FirstOrDefault(d =>
-                d.Name.StartsWith(
-                    databaseName,
-                    StringComparison.OrdinalIgnoreCase));
-    }
-    finally
-    {
-        if (server.Connected)
-        {
-            server.Disconnect();
-        }
-    }
-}
-
 public class PartitionProcessingStatus
 {
     public string TableName { get; set; }
-    public string DisplayFolder { get; set; }
+    public string TableGroup { get; set; }
     public string PartitionName { get; set; }
     public string State { get; set; }
-    public DateTime? RefreshedTime { get; set; }
+    public DateTime RefreshedTime { get; set; }
     public string RefreshedTimeText { get; set; }
     public string Status { get; set; }
     public string ErrorMessage { get; set; }
 }
 
-public List<PartitionProcessingStatus> GetProcessingStatus(
-    string serverConnectionString,
-    string databaseName)
+public List<PartitionProcessingStatus> GetProcessingStatus()
 {
     var result = new List<PartitionProcessingStatus>();
-    var server = new Microsoft.AnalysisServices.Tabular.Server();
 
-    try
+    // Model, Tables, TableGroup and Partitions are Tabular Editor TOMWrapper
+    // objects supplied by the C# scripting host.
+    foreach (TabularEditor.TOMWrapper.Table table in Model.Tables)
     {
-        server.Connect(serverConnectionString);
+        string tableGroup = table.TableGroup ?? String.Empty;
 
-        var database = server.Databases
-            .Cast<Microsoft.AnalysisServices.Tabular.Database>()
-            .FirstOrDefault(d =>
-                d.Name.Equals(
-                    databaseName,
-                    StringComparison.OrdinalIgnoreCase)
-                || d.Name.StartsWith(
-                    databaseName,
-                    StringComparison.OrdinalIgnoreCase));
-
-        if (database == null)
+        if (!tableGroup.StartsWith(
+                @"FACT\",
+                StringComparison.OrdinalIgnoreCase))
         {
-            throw new Exception(
-                "Semantic model not found: " + databaseName);
+            continue;
         }
 
-        foreach (var table in database.Model.Tables)
+        foreach (TabularEditor.TOMWrapper.Partition partition
+            in table.Partitions)
         {
-            var displayFolder = table.DisplayFolder ?? String.Empty;
+            string state = partition.State.ToString();
+            DateTime refreshedTime = partition.RefreshedTime;
 
-            if (!displayFolder.StartsWith(
-                    @"FACT\",
-                    StringComparison.OrdinalIgnoreCase))
+            result.Add(new PartitionProcessingStatus
             {
-                continue;
-            }
-
-            foreach (var partition in table.Partitions)
-            {
-                var state = partition.State.ToString();
-                var refreshedTime = partition.RefreshedTime;
-
-                result.Add(new PartitionProcessingStatus
-                {
-                    TableName = table.Name,
-                    DisplayFolder = displayFolder,
-                    PartitionName = partition.Name,
-                    State = state,
-                    RefreshedTime = refreshedTime,
-                    RefreshedTimeText = refreshedTime == null
-                        ? String.Empty
-                        : refreshedTime.Value.ToString(
-                            "yyyy-MM-dd HH:mm:ss"),
-                    Status = state.Equals(
-                            "Ready",
-                            StringComparison.OrdinalIgnoreCase)
-                        ? "Succeeded"
-                        : state,
-                    ErrorMessage = String.Empty
-                });
-            }
-        }
-    }
-    catch (Exception ex)
-    {
-        result.Add(new PartitionProcessingStatus
-        {
-            TableName = String.Empty,
-            DisplayFolder = String.Empty,
-            PartitionName = String.Empty,
-            State = "Error",
-            Status = "Error",
-            ErrorMessage = ex.ToString()
-        });
-    }
-    finally
-    {
-        if (server.Connected)
-        {
-            server.Disconnect();
+                TableName = table.Name,
+                TableGroup = tableGroup,
+                PartitionName = partition.Name,
+                State = state,
+                RefreshedTime = refreshedTime,
+                RefreshedTimeText = refreshedTime == DateTime.MinValue
+                    ? String.Empty
+                    : refreshedTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                Status = state.Equals(
+                        "Ready",
+                        StringComparison.OrdinalIgnoreCase)
+                    ? "Succeeded"
+                    : state,
+                ErrorMessage = partition.ErrorMessage ?? String.Empty
+            });
         }
     }
 
