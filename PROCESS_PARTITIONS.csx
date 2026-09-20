@@ -5,6 +5,7 @@ using System.Linq;
 using Microsoft.AnalysisServices;
 using Microsoft.AnalysisServices.AdomdClient;
 using TabularEditor.TOMWrapper;
+using System.Runtime.Intrinsics.Wasm;
 
 
 
@@ -21,11 +22,27 @@ List<PartitionProcessingStatus> processingStatus =
     GetProcessingStatus(Model);
 
 var rds = GetRDS(PBIServer, PBIDatabase)
-    .OrderBy(x => x)
+    .OrderByDescending(x => x)
     .ToList();
 
 foreach (var batch in rds.Chunk(5))
 {
+
+        if (File.Exists(@"C:\Temp\STOP.txt"))
+        {
+            Logger.Log("STOP file detected.");
+            return;
+        }
+
+        var hour = DateTime.Now.Hour;
+
+        if (hour >= 5 && hour < 18)
+        {
+            Logger.Log($"Current time is {DateTime.Now:HH:mm}. Processing blocked.");
+            return;
+        }
+
+
     Logger.Log($"Processing Batch: {string.Join(",", batch)}");
 
     var partitionsToProcess =
@@ -35,6 +52,8 @@ foreach (var batch in rds.Chunk(5))
                     p.PartitionName.Contains(rdsDate.ToString()))
                 &&
                 !p.PartitionName.Contains("LTE"))
+                && 
+                p.Status == "NoData"
             .ToList();
 
         Logger.Log($"Found {partitionsToProcess.Count} partitions");
@@ -44,18 +63,17 @@ foreach (var batch in rds.Chunk(5))
         Logger.Log("Procesing " + partition.PartitionName);        
     }
 
-    // Execute and wait for completion
-    // model.SaveChanges();
-    // WaitForCompletion();
+    Logger.Log("Start Processing");
+    ProcessPartitions(
+    PBIServer, 
+    PBIDatabase, 
+    partitionsToProcess,
+    64
+    ); 
+    Logger.Log("End Processing");
+
+
 }
-Logger.Log("Start Processing");
-ProcessPartitions(
-PBIServer, 
-PBIDatabase, 
-partitionsToProcess,
-64
-); 
-Logger.Log("End Processing");
 
 
 //foreach (PartitionProcessingStatus item in processingStatus)
