@@ -13,27 +13,30 @@ public string PBIServerName =
 public string PBIDatabase = "TKV-BusinessVentures";
 
 List<PartitionProcessingStatus> processingStatus =
-    GetProcessingStatus();
+    GetProcessingStatus(Model);
 
-foreach (PartitionProcessingStatus item in processingStatus)
-{
-    Output(
-        item.TableName
-        + " | "
-        + item.TableGroup
-        + " | "
-        + item.PartitionName
-        + " | "
-        + item.State
-        + " | "
-        + item.RefreshedTimeText
-        + " | "
-        + item.Status
-        + (String.IsNullOrEmpty(item.ErrorMessage)
-            ? String.Empty
-            : " | " + item.ErrorMessage));
-}
 
+Output(processingStatus); 
+
+//foreach (PartitionProcessingStatus item in processingStatus)
+//{
+//    Output(
+//        item.TableName
+//        + " | "
+//        + item.TableGroup
+//        + " | "
+//        + item.PartitionName
+//        + " | "
+//        + item.State
+//        + " | "
+//        + item.RefreshedTimeText
+//        + " | "
+//        + item.Status
+//        + (String.IsNullOrEmpty(item.ErrorMessage)
+//            ? String.Empty
+//            : " | " + item.ErrorMessage));
+//}
+//
 public class PartitionProcessingStatus
 {
     public string TableName { get; set; }
@@ -46,7 +49,7 @@ public class PartitionProcessingStatus
     public string ErrorMessage { get; set; }
 }
 
-public List<PartitionProcessingStatus> GetProcessingStatus()
+public List<PartitionProcessingStatus> GetProcessingStatus(Model m )
 {
     var result = new List<PartitionProcessingStatus>();
 
@@ -57,7 +60,7 @@ public List<PartitionProcessingStatus> GetProcessingStatus()
         string tableGroup = table.TableGroup ?? String.Empty;
 
         if (!tableGroup.StartsWith(
-                @"FACT\",
+                @"FACTS\",
                 StringComparison.OrdinalIgnoreCase))
         {
             continue;
