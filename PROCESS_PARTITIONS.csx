@@ -25,7 +25,7 @@ var rds = GetRDS(PBIServer, PBIDatabase)
     .OrderByDescending(x => x)
     .ToList();
 
-foreach (var batch in rds.Chunk(5))
+foreach (var batch in rds.Chunk(10))
 {
 
         if (File.Exists(@"C:\Temp\STOP.txt"))
@@ -51,9 +51,10 @@ foreach (var batch in rds.Chunk(5))
                 batch.Any(rdsDate =>
                     p.PartitionName.Contains(rdsDate.ToString()))
                 &&
-                !p.PartitionName.Contains("LTE"))
+                !p.PartitionName.Contains("LTE")
                 && 
                 p.Status == "NoData"
+                )
             .ToList();
 
         Logger.Log($"Found {partitionsToProcess.Count} partitions");
